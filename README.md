@@ -32,6 +32,7 @@ It contains:
 
 ## Other notes
 
+- the [playwright.monocart-reporter-merge.ts](./playwright.monocart-reporter-merge.ts) file contains a block of commented out code. If you uncomment that block and comment the code above then the `npm run merge-cli` works fine. Meaning the merge-cli will successfully use that TS file. This is just to further show that the problem seems to be with importing from other files in the project.
 - this repo contains a [tsconfig.json](tsconfig.json) that mimics the one used in my real Angular project.
 - the [package.json](/package.json) contains `"typescript": "~4.3.5"` which is also the version of Typescript that is supported on the Angular project where I'm trying to use the monocart-reporter merge CLI. I'm mentioning this because the current support for TS files in the monocart-reporter merge CLI is using [Amaro](https://github.com/nodejs/amaro) which in their README says: `The supported TypeScript version is 5.5.4.`.
 
